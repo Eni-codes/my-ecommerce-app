@@ -10,6 +10,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://previews.123rf.com/images/trongnguyen/trongnguyen1906/trongnguyen190600986/125122433-blurry-background-hair-salon-products-at-beauty-store-in-america.jpg");
 }
 #root{
   height:100%;
@@ -35,7 +36,7 @@ main{
 }
 footer{
   grid-area: footer;
-  background-color: #203040;
+  background-color: purple;
   color: white;
 }
 /* Common */
@@ -62,6 +63,9 @@ ul{
 li{
   margin-top: 1rem;
 }
+input,
+select,
+textarea,
 button{
   padding: 0;
   border-radius: 0.5;
@@ -70,10 +74,16 @@ button{
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f8f8;
-  cursor: pointer;
-  color: #f8f8f8;
+
 }
+button{
+  background-color: purple;
+  cursor: pointer;
+  color: white;
+}
+input:hover,
+select:hover,
+textarea:hover,
 button:hover{
   border: 0.1 rem black;
 }
@@ -93,6 +103,14 @@ a.brand{
   color: white;
   font-size: 3rem;
   font-weight: bold;
+}
+.badge {
+  background-color:goldenrod;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
 }
 .row{
   display: flex;
@@ -115,6 +133,9 @@ a.brand{
 .col-3 {
   flex: 32 1 75rem;
 }
+.min-30 {
+  min-width: 30rem;
+}
 img{
     border-radius: 0.5rem;
 }
@@ -122,15 +143,27 @@ img.meduim{
     max-width: 29rem;
     width:100%
 }
+img.small {
+  max-width: 5rem;
+  width: 100%;
+}
 img.large{
   width: 100%;
   /* makes web page responsive */
 }
+
 .card{
-    border: 0.1rem #c0c0c0 solid;
-    background-color: #f8f8f8;
+    border: 0.1rem purple;
+    background-color:pink;
     border-radius: 0.5rem;
     margin: 1rem;
+}
+
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 .card-body {
   padding: 1rem;
@@ -156,4 +189,17 @@ img.large{
 .error{
   color:brown;
   
+}
+.alert{
+  padding: 1rem;
+  border:0.1rem solid transparent;
+  border: 0.5rem;
+}
+.alert-info {
+  color: #2020a0;
+  background-color: white;
+}
+.alert-danger {
+  color: red;
+  background-color: oldlace;
 }
